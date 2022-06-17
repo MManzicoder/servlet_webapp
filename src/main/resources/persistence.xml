@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <persistence-unit name="default">
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/hibernate-configuration">
+    <session-factory>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/hibernate</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">coder123</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.example.servlet.models.Student"/>
+    </session-factory>
+</hibernate-configuration>
