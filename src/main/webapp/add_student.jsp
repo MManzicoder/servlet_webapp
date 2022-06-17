@@ -4,17 +4,29 @@
     <title>Students Managment</title>
     <link href="${pageContext.request.contextPath}/css/styles.css" rel="stylesheet" type="text/css"> </link>
     <script language="JavaScript" type="text/JavaScript" src="../js/success.js"></script>
+    <style>
+        .app-title{
+
+        }
+        .links a{
+            text-decoration: none;
+            padding: 10px 15px;
+            color: #fff;
+            border-radius: 5px;
+            background-color: dodgerblue;
+        }
+    </style>
 </head>
 <body>
 <center>
-    <h1>Students Management</h1>
-    <h2>
-        <a href="/rdev/new">Add New Student</a>
+    <h1 class="app-title">Students Management</h1>
+    <h2 class="links">
+        <a href="/rdev/new">New Student</a>
         &nbsp;&nbsp;&nbsp;
-        <a href="/rdev/list">List All Students</a>
+        <a href="/rdev/list">List All</a>
     </h2>
 </center>
-<div align="center">
+<div align="center" class="container">
     <c:if test="${student != null}">
     <form action="update" method="post">
         </c:if>
@@ -62,7 +74,7 @@
                 <tr>
                     <td colspan="2" align="center">
                         <input type="submit" value="Save" />
-                        <input type="reset" value="clear" />
+                        <c:if test="${student == null}"> <input type="reset" value="clear" /> </c:if>
                     </td>
                 </tr>
             </table>

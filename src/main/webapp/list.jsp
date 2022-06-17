@@ -7,7 +7,19 @@
 <html>
 <head>
     <title>Students Managment</title>
-    <link rel="stylesheet" href="../src/css/app.css">
+    <link href="${pageContext.request.contextPath}/css/app.css" rel="stylesheet" type="text/css">
+    <style>
+        .app-title{
+
+        }
+        .links a{
+            text-decoration: none;
+            padding: 10px 15px;
+            color: #fff;
+            border-radius: 5px;
+            background-color: dodgerblue;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +29,7 @@
     <h2 class="links">
         <a href="/rdev/new">New Student</a>
         &nbsp;&nbsp;&nbsp;
-        <a href="/rdev/list">All</a>
+        <a href="/rdev/list">List All</a>
     </h2>
 </center>
 <div align="center" class="container">
