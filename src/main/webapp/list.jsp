@@ -7,18 +7,20 @@
 <html>
 <head>
     <title>Students Managment</title>
+    <link rel="stylesheet" href="../src/css/app.css">
 </head>
+
 <body>
 <center>
 
-    <h1>Students Management</h1>
-    <h2>
-        <a href="/rdev/new">Add New Student</a>
+    <h1 class="app-title">Students Management</h1>
+    <h2 class="links">
+        <a href="/rdev/new">New Student</a>
         &nbsp;&nbsp;&nbsp;
-        <a href="/rdev/list">List All Students</a>
+        <a href="/rdev/list">All</a>
     </h2>
 </center>
-<div align="center">
+<div align="center" class="container">
     <table border="1" cellpadding="5">
         <caption><h2>List of Students</h2></caption>
         <tr>
